@@ -1,0 +1,10 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem;
+	min-height: 100vh;
+	background: rgb(221, 218, 221);
+	background: linear-gradient(337deg, rgba(221, 218, 221, 1) 0%, rgba(253, 253, 253, 1) 100%);
+}

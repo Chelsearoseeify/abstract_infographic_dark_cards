@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+.bubble {
+	position: absolute;
+	top: 4%;
+	left: -1%;
+	height: 11rem;
+	width: 10rem;
+}
+
+.bubble {
+	&_container {
+		border-radius: 50%;
+		background: linear-gradient(145deg, #d6d6d6, #f3f3f3);
+		box-shadow: 8px 7px 17px #2a2f3a, inset 1px 6px 16px 2px #b5b5b55e, inset -11px -7px 11px 5px #ffffff, inset 1px 1px 0px 1px #ffffff;
+		position: absolute;
+		top: 13%;
+		left: -13%;
+		height: 8rem;
+		width: 8rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 4;
+	}
+
+	&_letter {
+		font-family: 'Actor', sans-serif;
+		font-size: 3.5em;
+		color: #5c6171;
+	}
+}

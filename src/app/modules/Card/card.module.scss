@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import './../../mixins.scss';
+
+.main_container {
+	position: relative;
+}
+
+.pseudo_card {
+	width: 20rem;
+	height: 25rem;
+	clip-path: inset(0px 0px round 2% 2%);
+	position: absolute;
+	top: 50%;
+	right: 50%;
+
+	transform: translate(50%, -50%);
+	z-index: 3;
+}
+
+.letter_bubble {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	background: $bubble_main_color;
+	box-shadow: 7px 15px 17px 2px #2a2f3a, 13px 15px 19px 0px rgb(174 174 192 / 22%), inset -10px -10px 10px rgb(174 174 192 / 0%),
+		inset -1px 1px 0px rgba($bubble_line_color, 0.85), inset -7px 10px 12px 6px rgba($bubble_light_color, 0.52);
+	position: inherit;
+	right: 12rem;
+	top: 2.2rem;
+}
+
+.card {
+	width: 20rem;
+	height: 25rem;
+	padding: 4rem 2rem;
+	border-radius: 0.5rem;
+	background: linear-gradient(337deg, rgba(54, 59, 78, 1) 0%, rgba(82, 93, 114, 1) 100%);
+	box-shadow: 5px 5px 16px 0px hsl(220deg 15% 10%);
+	font-family: 'Actor', sans-serif;
+	font-weight: 200;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: end;
+	position: relative;
+	z-index: 2;
+
+	&_title {
+		font-size: 20px;
+		line-height: 24px;
+		/* identical to box height */
+
+		text-align: justify;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: $bubble_line_color;
+	}
+
+	&_subtitle {
+		font-size: 18px;
+		line-height: 22px;
+		text-align: justify;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+
+		color: rgba(255, 255, 255, 0.65);
+	}
+
+	&_text {
+		font-size: 14px;
+		line-height: 120%;
+		/* or 17px */
+
+		display: flex;
+		align-items: center;
+		text-align: justify;
+
+		color: rgba(255, 255, 255, 0.8);
+	}
+}
