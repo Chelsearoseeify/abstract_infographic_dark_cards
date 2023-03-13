@@ -1,34 +1,32 @@
-@import './../../mixins.scss';
-
 .bubble {
 	border-radius: 100%;
 	height: 60px;
 	width: 60px;
 	position: absolute;
 	bottom: 0;
-}
 
-.concave {
-	height: 100px;
-	width: 100px;
-	border-radius: 50%;
-	background: $bubble_main_color;
-	box-shadow: 3px 6px 9px 0px #2a2f3a9e, 10px 10px 30px rgb(174 174 192 / 25%), inset -10px -10px 10px rgb(174 174 192 / 0%),
-		inset 5px 5px 15px rgba($bubble_dark_color, 0.58), inset -4px -4px 15px 2px rgba($bubble_light_color, 0.749),
-		inset -1px 1px 0px rgba($bubble_line_color, 0.85);
-	right: -18%;
-	bottom: 16%;
-	z-index: 1;
-}
+	&--concave {
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		background: rgb(var(--bubble_main_color));
+		box-shadow: 3px 6px 9px 0px #2a2f3a9e, 10px 10px 30px rgb(174 174 192 / 25%), inset -10px -10px 10px rgb(174 174 192 / 0%),
+			inset 5px 5px 15px rgba(var(--bubble_dark_color), 0.58), inset -4px -4px 15px 2px rgba(var(--bubble_light_color), 0.749),
+			inset -1px 1px 0px rgba(var(--bubble_line_color), 0.85);
+		right: -18%;
+		bottom: 16%;
+		z-index: 1;
+	}
 
-.convess {
-	border-radius: 50%;
-	background: $bubble_main_color;
-	box-shadow: 3px 2px 7px 0px #2a2f3a9e, 10px 10px 30px rgb(174 174 192 / 25%), inset -10px -10px 10px rgb(174 174 192 / 0%),
-		inset -5px -9px 10px rgba($bubble_dark_color, 0.58), inset 5px 8px 9px 2px rgba($bubble_light_color, 0.749);
-	left: 6rem;
-	bottom: -2rem;
-	z-index: 4;
+	&--convess {
+		border-radius: 50%;
+		background: rgb(var(--bubble_main_color));
+		box-shadow: 3px 2px 7px 0px #2a2f3a9e, 10px 10px 30px rgb(174 174 192 / 25%), inset -10px -10px 10px rgb(174 174 192 / 0%),
+			inset -5px -9px 10px rgba(var(--bubble_dark_color), 0.58), inset 5px 8px 9px 2px rgba(var(--bubble_light_color), 0.749);
+		left: 6rem;
+		bottom: -2rem;
+		z-index: 4;
+	}
 }
 
 //super enfatizzato

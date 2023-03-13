@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
-@import './../../mixins.scss';
+@import '../../mixins.scss';
 
 .main_container {
 	position: relative;
@@ -21,12 +21,18 @@
 	height: 160px;
 	width: 160px;
 	border-radius: 50%;
-	background: $bubble_main_color;
+	background: rgb(var(--bubble_main_color));
 	box-shadow: 7px 15px 17px 2px #2a2f3a, 13px 15px 19px 0px rgb(174 174 192 / 22%), inset -10px -10px 10px rgb(174 174 192 / 0%),
-		inset -1px 1px 0px rgba($bubble_line_color, 0.85), inset -7px 10px 12px 6px rgba($bubble_light_color, 0.52);
+		inset -1px 1px 0px rgba(var(--bubble_line_color), 0.85), inset -7px 10px 12px 6px rgba(var(--bubble_light_color), 0.52);
 	position: inherit;
 	right: 12rem;
 	top: 2.2rem;
+	/* &--blue {
+		--bubble_main_color: var(--bubble_main_color--blue);
+		--bubble_dark_color: var(--bubble_dark_color--blue);
+		--bubble_light_color: var(--bubble_light_color--blue);
+		--bubble_line_color: var(--bubble_line_color--blue);
+	} */
 }
 
 .card {
@@ -53,7 +59,7 @@
 		text-align: justify;
 		letter-spacing: 0.01em;
 		text-transform: uppercase;
-		color: $bubble_line_color;
+		color: rgb(var(--bubble_line_color));
 	}
 
 	&_subtitle {
