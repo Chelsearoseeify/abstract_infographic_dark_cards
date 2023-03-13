@@ -22,7 +22,7 @@ const Card: FC<Props> = ({ title, subtitle, text, color }) => {
 				<div className={clsx(styles.letter_bubble, color)} />
 			</div>
 			<div className={styles.card}>
-				<h2 className={styles.card_title}>{title}</h2>
+				<h2 className={clsx(styles.card_title, color)}>{title}</h2>
 				<h5 className={styles.card_subtitle}>{subtitle}</h5>
 				<p className={styles.card_text}>
 					{!text &&

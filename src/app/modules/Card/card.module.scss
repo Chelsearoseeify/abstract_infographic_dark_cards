@@ -18,21 +18,15 @@
 }
 
 .letter_bubble {
-	height: 160px;
-	width: 160px;
+	height: 150px;
+	width: 150px;
 	border-radius: 50%;
 	background: rgb(var(--bubble_main_color));
-	box-shadow: 7px 15px 17px 2px #2a2f3a, 13px 15px 19px 0px rgb(174 174 192 / 22%), inset -10px -10px 10px rgb(174 174 192 / 0%),
+	box-shadow: 7px 15px 17px 2px #2a2f3a, 13px 15px 19px 0px rgba(174, 174, 192, 0.22), inset -10px -10px 10px rgba(174, 174, 192, 0),
 		inset -1px 1px 0px rgba(var(--bubble_line_color), 0.85), inset -7px 10px 12px 6px rgba(var(--bubble_light_color), 0.52);
 	position: inherit;
-	right: 12rem;
-	top: 2.2rem;
-	/* &--blue {
-		--bubble_main_color: var(--bubble_main_color--blue);
-		--bubble_dark_color: var(--bubble_dark_color--blue);
-		--bubble_light_color: var(--bubble_light_color--blue);
-		--bubble_line_color: var(--bubble_line_color--blue);
-	} */
+	right: 13rem;
+	top: 2.6rem;
 }
 
 .card {
